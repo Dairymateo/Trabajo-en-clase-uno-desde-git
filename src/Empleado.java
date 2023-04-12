@@ -1,5 +1,5 @@
 public class Empleado {
-    private int calcularHorasTrabajadas;
+    //private int calcularHorasTrabajadas;
     private String nombre;
 
     private String cedula;
@@ -25,11 +25,11 @@ public class Empleado {
         return cedula;
     }
 
-    public void setHorasTrabajadas(int horasTrabajadas){
+    public void sethorasTrabajadas(int horasTrabajadas){
         this.horasTrabajadas=horasTrabajadas;
     }
 
-    public int getHorasTrabajadas(){
+    public int gethorasTrabajadas(){
         return horasTrabajadas;
     }
 
@@ -64,10 +64,11 @@ public class Empleado {
 
 
 
-    public int calcularHorasTrabajadas(int horasExtras){
-        return horasTrabajadas+=horasExtras;
+    public void adicionarHorasExtras(int horasExtras){
+           horasTrabajadas+=horasExtras;
     }
 
 
 
 }
+
